@@ -9,14 +9,14 @@ namespace tanken.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-        [ObservableProperty]
-        private string _title = "Tanken";
 
         [ObservableProperty]
-        private string _description1 = "Preis/Liter:";
+        private int _price = 0;
 
         [ObservableProperty]
-        private string _description2 = "Anzahl/Liter:";
+        private int _aliter = 0;
+
+        
 
 
 

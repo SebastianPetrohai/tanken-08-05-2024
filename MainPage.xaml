@@ -4,9 +4,13 @@
              Shell.NavBarIsVisible="False"
              x:Class="tanken.MainPage">
 
-    <Grid>
-        <Label FontSize="Header" SemanticProperties.HeadingLevel="Level1" Text="{Binding Title}"/>
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+        <Label FontSize="Header" HorizontalTextAlignment="Center" SemanticProperties.HeadingLevel="Level1" Text="Tanken"/>
+        <Label Grid.Row="1" FontSize="Title" Text="Preis/Liter:"/>
+        <Label Grid.Row="2" FontSize="Title" Text="Anzahl der Liter:"/>
 
+        <Entry Grid.Row="1" HorizontalTextAlignment="Center" FontSize="Small" Text="{Binding Price}"/>
+        <Entry Grid.Row="2" HorizontalTextAlignment="Center" FontSize="Small" Text="{Binding Aliter}"/>
     </Grid>
 
 </ContentPage>
