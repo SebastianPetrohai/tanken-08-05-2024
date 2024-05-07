@@ -11,8 +11,8 @@
 
         <Entry Grid.Row="1" HorizontalTextAlignment="Center" FontSize="Small" Text="{Binding Price}"/>
         <Entry Grid.Row="2" HorizontalTextAlignment="Center" FontSize="Small" Text="{Binding Aliter}"/>
-        <Button Grid.Row="3" Command="{Binding CalculateCommand}"/>
-        <Label Grid.Row="4" Text="{Binding Ergebnis}"/>
+        <Button Grid.Row="3" Command="{Binding CalculateCommand}" Text="Zahl berechnen" />
+        <Label FontSize="180" HorizontalTextAlignment="Center" Grid.Row="4" Text="{Binding Ergebnis}"/>
     </Grid>
 
 </ContentPage>
