@@ -12,19 +12,19 @@ namespace tanken.ViewModels
     {
 
         [ObservableProperty]
-        private int _price = 0;
+        private double _price = 0;
 
         [ObservableProperty]
-        private int _aliter = 0;
+        private double _aliter = 0;
 
         [ObservableProperty]
-        private int _ergebnis = 0;
+        private double _ergebnis = 0;
 
         [RelayCommand]
         void Calculate()
         {
-            int zahl1 = Convert.ToInt32(this.Price);
-            int zahl2 = Convert.ToInt32(this.Aliter);
+            double zahl1 = Convert.ToDouble(this.Price);
+            double zahl2 = Convert.ToDouble(this.Aliter);
 
             this.Ergebnis = zahl1 * zahl2;
         }
